@@ -1,0 +1,10 @@
+^C:\USERS\ATRE\DOCUMENTS\MY APPS\LOGIN_APP\BUILD\WINDOWS\CMAKEFILES\D7653B249B5A630FE7D6BE2C87061FAD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/atre/Documents/My Apps/login_app/windows" "-BC:/Users/atre/Documents/My Apps/login_app/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/atre/Documents/My Apps/login_app/build/windows/login_app.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
