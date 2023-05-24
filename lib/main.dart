@@ -25,6 +25,7 @@ class AppHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal.shade400,
         title: const Text('.appable/'),
         leading: const Icon(Icons.ondemand_video),
       ),
@@ -44,7 +45,6 @@ class AppHome extends StatelessWidget {
               onPressed: () {},
               child: const Text('outlined '),
             ),
-           
           ],
         ),
       ),
