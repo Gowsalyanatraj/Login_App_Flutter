@@ -45,6 +45,7 @@ class AppHome extends StatelessWidget {
               onPressed: () {},
               child: const Text('outlined '),
             ),
+            Image(image: AssetImage('assets/book.png'))
           ],
         ),
       ),
