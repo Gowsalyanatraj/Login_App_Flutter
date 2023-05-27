@@ -10,7 +10,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(brightness: Brightness.light),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: AppHome(),
@@ -25,7 +28,7 @@ class AppHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal.shade400,
+        backgroundColor: Colors.blue,
         title: const Text('.appable/'),
         leading: const Icon(Icons.ondemand_video),
       ),
@@ -40,12 +43,15 @@ class AppHome extends StatelessWidget {
             const Text("Heading"),
             const Text("Sub-Heading"),
             const Text("Paragraph"),
+            const SizedBox(height: 10),
             ElevatedButton(onPressed: () {}, child: const Text('Elevated')),
+            const SizedBox(height: 10),
             OutlinedButton(
               onPressed: () {},
               child: const Text('outlined '),
             ),
-            Image(image: AssetImage('assets/book.png'))
+            const SizedBox(height: 20),
+            Image(image: AssetImage('assets/images/book.png'))
           ],
         ),
       ),
