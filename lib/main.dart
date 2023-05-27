@@ -15,10 +15,9 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      home: AppHome(),
+      home: const AppHome(),
     );
-  }
+  } 
 }
 
 class AppHome extends StatelessWidget {
