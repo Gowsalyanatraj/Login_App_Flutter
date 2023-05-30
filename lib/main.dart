@@ -11,13 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(brightness: Brightness.light),
+      theme:
+          ThemeData(brightness: Brightness.light, primarySwatch: Colors.indigo),
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       home: const AppHome(),
     );
-  } 
+  }
 }
 
 class AppHome extends StatelessWidget {
@@ -27,7 +28,7 @@ class AppHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.indigo,
         title: const Text('.appable/'),
         leading: const Icon(Icons.ondemand_video),
       ),
@@ -39,9 +40,9 @@ class AppHome extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            const Text("Heading"),
-            const Text("Sub-Heading"),
-            const Text("Paragraph"),
+            Text("Heading", style: Theme.of(context).textTheme.headline2),
+            Text("Sub-Heading", style: Theme.of(context).textTheme.subtitle2),
+            Text("Paragraph", style: Theme.of(context).textTheme.bodyText1),
             const SizedBox(height: 10),
             ElevatedButton(onPressed: () {}, child: const Text('Elevated')),
             const SizedBox(height: 10),
@@ -50,7 +51,7 @@ class AppHome extends StatelessWidget {
               child: const Text('outlined '),
             ),
             const SizedBox(height: 15),
-            Image(image: AssetImage('assets/images/book.png'))
+            const Image(image: AssetImage('assets/images/book.png'))
           ],
         ),
       ),
