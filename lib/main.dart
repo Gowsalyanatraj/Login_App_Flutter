@@ -48,7 +48,7 @@ class AppHome extends StatelessWidget {
             const SizedBox(height: 10),
             OutlinedButton(
               onPressed: () {},
-              child: const Text('outlined '),
+              child: const Text('outlined'),
             ),
             const SizedBox(height: 15),
             const Image(image: AssetImage('assets/images/book.png'))
