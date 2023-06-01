@@ -28,7 +28,7 @@ class AppHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.indigo.shade300,
         title: const Text('.appable/'),
         leading: const Icon(Icons.ondemand_video),
       ),
