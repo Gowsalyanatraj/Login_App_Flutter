@@ -6,7 +6,7 @@ class GAppTheme {
     brightness: Brightness.light,
     textTheme: TextTheme(
       headline2: GoogleFonts.montserrat(
-        color: Colors.black87
+        color: Colors.black26
       ),
       subtitle2: GoogleFonts.poppins(
         color: Colors.black54,
